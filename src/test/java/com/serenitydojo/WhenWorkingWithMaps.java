@@ -80,9 +80,11 @@ public class WhenWorkingWithMaps {
                 "hamster", LETTUCE);
 
         // TODO: Check that the map contains a key of "dog"
-        boolean containsDog = true;
+
+        boolean containsDog = favoriteFood.containsKey("dog");
 
         assertThat(containsDog).isTrue();
+
     }
 
     // We can check that a map contains a specified value
@@ -94,7 +96,7 @@ public class WhenWorkingWithMaps {
                 "hamster", LETTUCE);
 
         // TODO: Check that the map contains a value of TUNA
-        boolean containsTuna = true;
+        boolean containsTuna = favoriteFood.containsValue(TUNA);
 
         assertThat(containsTuna).isTrue();
     }
